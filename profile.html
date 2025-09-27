@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="profile.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/088861f25e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Menu div -->
+         <div class="menu-div" id="menudivid">
+            <div class="d-flex justify-content-between align-items-center p-3 menu-head">
+                <div class="menu-logo">Kyaw</div>
+                <div id="closeid" class="menu-close">&#9932;</div>
+            </div>
+            <div class="menu-body">
+                <ul>
+                    <li class="menu-li profile-m"><a class="tc menu-a" href="#scrollspyHeading1">Profile</a></li>
+                    <li class="menu-li about-m"><a class="tc menu-a" href="#scrollspyHeading2">About</a></li>
+                    <li class="menu-li project-m"><a class="tc menu-a" href="#scrollspyHeading3">Project</a></li>
+                    <li class="menu-li skill-m"><a class="tc menu-a" href="#scrollspyHeading4">Skills</a></li>
+                    <li class="menu-li contact-m"><a class="tc menu-a" href="#scrollspyHeading5">Contact</a></li>
+                    <li class="select-li">
+                        <select class="select-menu">
+                            <option value="Light" class="menu-option"><button class="tc" data-theme="light"><i class="fa-regular fa-sun pe-2"></i>Light</button></option>
+                            <option value="Dark" class="menu-option"><button class="tc" data-theme="dark"><i class="fa-regular fa-sun pe-2"></i>Dark</button></option>
+                            <option value="Auto" class="menu-option"><button class="tc" data-theme="auto"><i class="fa-regular fa-sun pe-2"></i>Auto</button></option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+         </div>
+    <div class="con1 tc">
+        
+    <!--Header sticky tag-->
+    <div class="container-fluid header-div tc">
+            <div class="p-2 header-div1 tc">
+                <nav id="navbar-example2" class="navbar tc">
+                    <div class="navbar-brand head-logo tc">Kyaw Zin</div>
+                    <ul class="nav nav-pills text-light tc ul-nav">
+                        <li class="nav-item tc">
+                        <a class="nav-link nav-link-warning-hover tc" href="#scrollspyHeading1">Profile</a>
+                        </li>
+                        <li class="nav-item tc">
+                        <a class="nav-link tc" href="#scrollspyHeading2">About</a>
+                        </li>
+                        <li class="nav-item tc">
+                        <a class="nav-link tc" href="#scrollspyHeading3">Project</a>
+                        </li>
+                        <li class="nav-item tc">
+                        <a class="nav-link tc" href="#scrollspyHeading4">Skills</a>
+                        </li>
+                        <li class="nav-item tc">
+                        <a class="nav-link tc" href="#scrollspyHeading5">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown tc">
+                            <a class="nav-link dropdown-toggle mode-inn tc" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Mode</a>
+                            <ul class="dropdown-menu p-2 tc">
+                                <li><button class="dropdown-item them-option tc" data-theme="light"><i class="fa-regular fa-sun pe-2"></i>Light</button></li>
+                                <li><button class="dropdown-item them-option tc" data-theme="dark" ><i class="fa-regular fa-moon pe-2"></i>Dark</button></li>
+                                <li><button class="dropdown-item them-option tc" data-theme="auto" ><i class="fa-solid fa-circle-half-stroke pe-2"></i>Auto</button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span id="menuid" class="btn menu-icon">&#9776</span>
+                </nav>
+            </div>
+    </div>
+    <!--Body div-->
+    <div class="container-fluid position-relative p-0 m-0 body-parent tc"> 
+
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-offself="100" data-bs-smooth-scroll="true" class="scrollspy-example m-0 body-div tc" tabindex="0">
+           <!-- Profile me -->
+            <div class="profile-div tc" id="scrollspyHeading1">
+                 <div class="header-hero tc">
+                    <p class="hero-p1"><i class="fa-regular fa-circle-user pe-2 tc"></i>Kyaw Zin Win</p>
+                    <p class="hero-p2"><i class="fa-solid fa-check pe-2 tc"></i>Web developer & Physics student</p>
+                    <p class="hero-p2"><i class="fa-regular fa-flag pe-2 tc"></i>Myanmar!</p>
+                 </div>
+            </div>
+            <!-- About me -->
+            <div class="about-div tc" id="scrollspyHeading2">
+                <div class="about-div0">
+                    <div class="text-center mb-4">
+                        <h1 class="about-h1">About Me</h1>
+                        <p>✦•┈๑⋅⋯ ⋯⋅๑┈•✦</p>
+                    </div>
+                    <div class="pages atr">
+                    <div class="abouttext-div">
+                        <div class="abouttext-div1 atr">
+                            <p>Hello, my name is Kyaw Zin, and I am a university student with a strong passion for web development. I specialize in building modern, responsive websites using HTML, CSS, JavaScript, Bootstrap, and React.</p>
+                            <p>I began learning web development in April 2024, starting on a mobile phone with the Replit app. Although I faced many limitations and challenges, I stayed committed, using books, YouTube, and online resources to keep improving my skills.</p>
+                        </div>
+                        <div class="abouttext-div2 atr">
+                            <p>Now that I have a laptop, I can study and create projects more smoothly and effectively.</p>
+                            <p>My ultimate goal is clear — to become a professional, international-level web developer. For me, web development is not only something I enjoy but also the foundation on which I’m building my future.</p>
+                            <p>If you’d like to connect or collaborate, feel free to reach out via GitHub or Email.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project section -->
+            <div class="project-div tc" id="scrollspyHeading3">
+                <div class="sidebar">
+                    <h2>Projects</h2>
+                    <div class="project-navbar">
+                        <details>
+                            <summary>Portfolio Website</summary>
+                            <button onclick="showPreview('profile.html')">Live Preview</button>
+                            <button onclick="showCode('portfolio')">HTML</button>
+                            <button onclick="showCode('portfolio-css')">CSS</button>
+                            <button onclick="showCode('portfolio-js')">JS</button>
+                        </details>
+
+                        <details>
+                            <summary>Restaurant Websit</summary>
+                            <button onclick="showPreview('Ep-1/bootstrap1.html')">Live Preview</button>
+                            <button onclick="showCode('restaurant')">HTML</button>
+                            <button onclick="showCode('restaurant-css')">CSS</button>
+                            <button onclick="showCode('restaurant-js')">JS</button>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="content" id="content">
+                    <div class="h-100 w-100 d-flex justify-content-center align-items-center">
+                        <div class="preview">
+                            <h2>Project Preview / Code</h2>
+                            <p class="fs-5">Select a project from the left.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Skills section -->
+            <div class="skills-div tc" id="scrollspyHeading4">
+                <h1 class="skill-header">My Fontend Skills</h1>
+                <div class="skill-con">
+                    <!-- <div class="skill-letfcon">
+
+                    </div> -->
+                <div class="skill-main">
+                    <!-- Top and left -->
+                    <div class="skill-child skill-tl">
+                        <svg height="150" width="150">
+                            <defs>
+                                <pattern x="40" y="35" id="htmlPattern" patternUnits="userSpaceOnUse" width="150" height="150" patternTransform="rotate(90) scale(-1,1)">
+                    <image href="png-clipart-html-web-development-world-wide-web-consortium-javascript-webgl-5-angle-web-design-thumbnail.png" x="0" y="0" width="70" height="70"/>
+                </pattern>
+                            </defs>
+                            <circle cx="75" cy="75" r="70" class="circle-stroke" stroke-width="8px" fill="url(#htmlPattern)" stroke-dasharray="440" stroke-dashoffset="44" stroke-linecap="round" transform="rotate(90 75 75) scale(-1,1) translate(-150,0)">
+                                <animate attributeName="stroke-dashoffset" from="440" to="44" dur="2s" fill="freeze"/>
+                            </circle>
+                            <text id="progress-tl" x="75" y="125" text-anchor="middle" font-size="15" font-family="Arial" class="text-fill">0%</text>
+                        </svg>
+                    </div>
+                    <!-- Top and right -->
+                    <div class="skill-child skill-tr">
+                        <svg height="150" width="150">
+                            <defs>
+                                <pattern x="40" y="35" id="cssPattern" patternUnits="userSpaceOnUse" width="150" height="150" patternTransform="rotate(90) scale(-1,1)">
+                    <image href="download.jpg" x="0" y="0" width="70" height="70"/>
+                </pattern>
+                            </defs>
+                            <circle cx="75" cy="75" r="70" class="circle-stroke" stroke-width="8px" fill="url(#cssPattern)" stroke-dasharray="440" stroke-dashoffset="44" stroke-linecap="round" transform="rotate(90 75 75) scale(-1,1) translate(-150,0)">
+                                <animate attributeName="stroke-dashoffset" from="440" to="53" dur="2s" fill="freeze"/>
+                            </circle>
+                            <text id="progress-tr" x="75" y="125" text-anchor="middle" font-size="15" font-family="Arial" class="text-fill">0%</text>
+                        </svg>
+                    </div>
+                    <!-- Middle -->
+                    <div class="skill-child skill-m">
+                        <svg height="150" width="150">
+                             <defs>
+                                <pattern x="40" y="35" id="reactPattern" patternUnits="userSpaceOnUse" width="150" height="150" patternTransform="rotate(90) scale(-1,1)">
+                    <image href="react-logo-icon-11609374122d9vkbptqap.png" x="0" y="0" width="70" height="70"/>
+                </pattern>
+                            </defs>
+                            <circle cx="75" cy="75" r="70" class="circle-stroke" stroke-width="8px" fill="url(#reactPattern)" stroke-dasharray="440" stroke-dashoffset="44" stroke-linecap="round" transform="rotate(90 75 75) scale(-1,1) translate(-150,0)">
+                                <animate attributeName="stroke-dashoffset" from="440" to="88" dur="2s" fill="freeze"/>
+                            </circle>
+                            <text id="progress-m" x="75" y="125" text-anchor="middle" font-size="15" font-family="Arial" class="text-fill">0%</text>
+                        </svg>
+                    </div>
+                    <!-- Botton and left -->
+                    <div class="skill-child skill-bl">
+                        <svg height="150" width="150">
+                             <defs>
+                                <pattern x="40" y="35" id="jsPattern" patternUnits="userSpaceOnUse" width="150" height="150" patternTransform="rotate(90) scale(-1,1)">
+                    <image href="javascript-logo-web-application-scripting-language-web-development-web-banner-content-management-system-yellow-line-png-clipart.jpg" x="0" y="0" width="70" height="70"/>
+                </pattern>
+                            </defs>
+                            <circle cx="75" cy="75" r="70" class="circle-stroke" stroke-width="8px" fill="url(#jsPattern)" stroke-dasharray="440" stroke-dashoffset="44" stroke-linecap="round" transform="rotate(90 75 75) scale(-1,1) translate(-150,0)">
+                                <animate attributeName="stroke-dashoffset" from="440" to="132" dur="2s" fill="freeze"/>
+                            </circle>
+                            <text id="progress-bl" x="75" y="125" text-anchor="middle" font-size="15" font-family="Arial" class="text-fill">0%</text>
+                        </svg>
+                    </div>
+                    <!-- Botton and right -->
+                    <div class="skill-child skill-br">
+                        <svg height="150" width="150">
+                             <defs>
+                                <pattern x="40" y="35" id="bsPattern" patternUnits="userSpaceOnUse" width="150" height="150" patternTransform="rotate(90) scale(-1,1)">
+                    <image href="download (1).jpg" x="0" y="0" width="70" height="70"/>
+                </pattern>
+                            </defs>
+                            <circle cx="75" cy="75" r="70" class="circle-stroke" stroke-width="8px" fill="url(#bsPattern)" stroke-dasharray="440" stroke-dashoffset="44" stroke-linecap="round" transform="rotate(90 75 75) scale(-1,1) translate(-150,0)">
+                                <animate attributeName="stroke-dashoffset" from="440" to="154" dur="1.5s" fill="freeze"/>
+                            </circle>
+                            <text id="progress-br" x="75" y="125" text-anchor="middle" font-size="15" font-family="Arial" class="text-fill">0%</text>
+                        </svg>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Contant Section -->
+            <div class="contact-div tc d-flex justify-content-center align-items-center" id="scrollspyHeading5">
+                <div class="contact-child">
+                    <h1 class="text-center mb-4">Contact Me</h1>
+                    <div class="w-100 contact-main">
+                        <div class="contact-left py-3">
+                            <h4>Get in Touch!</h4>
+                            <p class="fs-5">
+                                I'm currently open to work opportunities as a Fontend Developer. If you're looking for someone passionate about building responsive and user-friendly websites, feel free to reach out.
+                            </p>
+                            <div><strong class="me-2">Email: </strong> <span><a class="emailadd" href="mailto:kyawzinwin23k@gmail.com">kyawzinwin23k@gmail.com</a></span></div>
+                            <div class="mt-1"><strong class="me-2">Phone: </strong> <span class="phoneno">+95 9674114295</span></div>
+                        </div>
+                        <div class="contact-right">
+                            <h6 class="contact-righth3">You can email me from here!</h6>
+                            <div class="contact-right1 p-2">
+                                <form class="form-contact" id="contact-form">
+                                    <input type="text" name="name" id="name" class="form-control input-color mb-2" placeholder="Full name..." required/>
+                                     <input type="email" name="email" id="email" class="form-control input-color mb-2" placeholder="Email address.." required/>
+                                        <textarea name="message" class="form-control mb-2 input-color" id="message" placeholder="Your message..." required></textarea>
+                                            <div id="feedback" class="msg"></div>
+                                            <button type="submit" class="float-end btn px-3 send" id="sendButton">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="ms-1 btn" href="https://t.me/@kyawzinwinei" target="_blank"><i class="fa-brands fa-telegram fs-1" style="color: #74C0FC;"></i></a>
+                        <a class="ms-1 btn" href="viber://chat?number=%2B959674114295" target="_blank"><i class="fa-brands fa-viber fs-1" style="color: #B197FC;"></i></a>
+                        <a class="ms-1 btn" href="https://github.com/kyawzin17" target="_blank"><i class="fa-brands fa-square-github github-icon fs-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-div d-flex align-items-center p-3 m-0 tc">
+            <div class="w-100 text-center footer-child">
+                <h2 class="text-center">My Learning Resources</h2>
+                <h3 class="text-center">Websites</h3>
+                <ul>
+                    <li>W3 School</li>
+                    <li>Bootstrap</li>
+                    <li>Chat GPT-40, GPT-4.5</li>
+                </ul>
+                <h3 class="text-center">YouTube Channels</h3>
+                <ul>
+                    <li>MSquare Programming</li>
+                    <li>Dgtech Myanmar</li>
+                    <li>Creative Coder Myanmar</li>
+                    <li>Some other Channels...</li>
+                </ul>
+                <h3 class="text-center">Books</h3>
+                <ul>
+                    <li>Sayar Ei Maung's "Professional-Web-Developer"</li>
+                    <li>Saturngod's "Developer Intern"</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        function showPreview(page) {
+      document.getElementById("content").innerHTML =
+        `<h2>Preview</h2>
+         <iframe src="${page}" frameborder="0"></iframe>`;
+    }
+
+    function showCode(type) {
+      // demo codes
+      const codes = {
+        "portfolio": `<html>\n  <head><title>Portfolio</title></head>\n  <body>Next version=>>></body>\n</html>`,
+        "portfolio-css": `body { font-family: Arial; background: #f4f4f4; }`,
+        "portfolio-js": `console.log("Hello Portfolio!");`,
+        "restaurant": `<html>\n  <body>Next version=>>></body>\n</html>`,
+        "restaurant-css": `h1 { color: green; }`,
+        "restaurant-js": `console.log("Restaurant website running");`
+      };
+
+      document.getElementById("content").innerHTML =
+        `<h2>Code</h2>
+         <pre><code>${codes[type]}</code></pre>`;
+    }
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
