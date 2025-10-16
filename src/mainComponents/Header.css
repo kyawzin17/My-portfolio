@@ -1,0 +1,55 @@
+.header {
+    width: 100%; height: 11%;
+    margin-bottom: 1px;
+    position: sticky;
+    top: 0px; left: 0px;
+    background-color: var(--bg);
+    border-bottom: 1.8px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h-inner {
+    width: 86%;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+}
+.h-center {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.h-button {
+    margin: 0px;
+    border: none;
+    background-color: #000000;
+    font-size: 18px;
+    user-select: none;
+    cursor: pointer;
+    color: lawngreen;
+}
+.h-button:hover {
+    color: var(--lcolor);
+    text-shadow: 0 0 3px var(--lcolor);
+}
+.h-button:focus {
+    border: 1.2px solid lawngreen;
+    border-radius: 8px;
+    box-shadow: 0 0 5px lawngreen;
+}
+.h-skills {
+    margin-top: 6px;
+}
+.h-about {
+    
+}
+.h-profile {
+    margin-top: -8px;
+}
+.h-project {
+
+}
+.h-contact {
+    margin-top: 6px;
+}
