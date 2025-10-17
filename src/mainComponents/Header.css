@@ -13,13 +13,39 @@
     width: 86%;
     padding: 1px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+.h-logo {
+    color: lawngreen;
+    text-shadow: 0 0 3px var(--lcolor);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 8px;
 }
 .h-center {
     width: 50%;
     display: flex;
     justify-content: space-around;
 }
+.h-theme {
+    width: 44px; height: 21px;
+    border: 1.5px solid lawngreen;
+    border-radius: 15px;
+    margin-top: 8px;
+}
+.theme-circle {
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    border: 1px solid rebeccapurple;
+    background-color: white;
+    box-shadow: 0 0 5px rebeccapurple;
+    margin: 1px;
+    transform: translateX(0);
+    transition: transform 0.4s;
+}
+.theme-circle.light {
+    transform: translateX(23px);
+    }
 .h-button {
     margin: 0px;
     border: none;

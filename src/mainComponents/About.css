@@ -1,0 +1,26 @@
+.b-about {
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo-container {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-container {
+    width: 60%; height: 70%;
+    padding: 40px 70px 40px 40px;
+    color: var(--color);
+    font-size: 17px;
+}
+.text-container p {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--color);
+    font-size: 19px;
+    line-height: 1.2em;
+}
