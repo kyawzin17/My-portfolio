@@ -1,5 +1,8 @@
 import "./Header.css";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faSun, faMoon} from "@fortawesome/free-solid-svg-icons";
+
 export default function Header() {
 
     const [theme, setTheme] = useState(true);
@@ -20,7 +23,13 @@ export default function Header() {
                     <button className="h-contact h-button">Contact</button>
                 </div>
                 <div onClick={themeChange} className="h-theme">
+                    <div className="themeicon-container">
+                        <FontAwesomeIcon className="sun-icon" icon={faSun} />
+                        <FontAwesomeIcon className="moon-icon" icon={faMoon} />
+                    </div>
+                    
                     <div className={theme ? "theme-circle" : "theme-circle light"}>
+
                     </div>
                 </div>
             </div>

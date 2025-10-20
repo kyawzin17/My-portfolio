@@ -1,0 +1,151 @@
+.b-skills {
+    width: 100%;
+    height: 88vh;
+    padding: 0 60px;
+}
+.skills-head {
+    text-align: center;
+    height: 15%;
+    padding: auto;
+    margin: 10px 0 5px 0;
+}
+.skills-head h2 {
+    margin: 0;
+}
+.skills-head p {
+    color: var(--color);
+    font-size: 20px;
+    margin: 0px;
+}
+
+.skills-main {
+    width: 100%;
+    height: 83%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills-bar {
+    width: 49%;
+    height: 100%;
+    padding: 5px 30px;
+}
+    .skills-bar ul li {
+        list-style-type: none;
+    }
+    h4 {
+        color: var(--color);
+        margin: 15px 0px 5px 0px;
+    }
+    .bar {
+        width: 80%;
+        height: 10px;
+        border: 1.6px solid rebeccapurple;
+        border-radius: 8px;
+    }
+    .html-bar {
+        width: 85%;
+        height: 100%;
+        background-color: rgb(250, 56, 7);
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    .css-bar {
+        width: 90%;
+        height: 100%;
+        background-color: rgb(8, 4, 252);
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    .js-bar {
+        width: 80%;
+        height: 100%;
+        background-color: rgb(230, 189, 11);
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    .react-bar {
+        width: 93%;
+        height: 100%;
+        background-color: rgb(7, 173, 250);
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    .bs-bar {
+        width: 85%;
+        height: 100%;
+        background-color: rgb(173, 7, 250);
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    .tw-bar {
+        width: 2%;
+        height: 100%;
+        background-color: rgb(112, 7, 250);
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+.skills-hr {
+    width: 2px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--lcolor);
+}
+.skills-card {
+    width: 49%;
+    height: 100%;
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+    grid-template-areas: 'first second third'
+                            'fourth five six';
+}
+    .card {
+        border: 2px solid rebeccapurple;
+        border-radius: 5px;
+        box-shadow: 0 0 5px var(--lcolor);
+        color: var(--color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #212121;
+    }
+    .card header {
+        height: 15%;
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        margin: 0;
+    }
+    .card main {
+        height: 68%;
+        width: 100%;
+        padding: 5px;
+        margin: 0;
+    }
+    .card footer {
+        height: 15%;
+        width: 100%;
+        text-align: center;
+        padding: 4px; margin: 0;
+        border: none;
+        border-top: 2px solid #000;
+    }
+    .html {
+        grid-area: first;
+    }
+    .css {
+        grid-area: second;
+    }
+    .javascript {
+        grid-area: third;
+    }
+    .react.js {
+        grid-area: fourth;
+    }
+    .bootstrap {
+        grid-area: five;
+    }
+    .tailwind {
+        grid-area: six;
+    }

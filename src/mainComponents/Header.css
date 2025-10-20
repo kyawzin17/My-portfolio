@@ -28,24 +28,44 @@
     justify-content: space-around;
 }
 .h-theme {
-    width: 44px; height: 21px;
+    width: 46px; height: 23px;
     border: 1.5px solid lawngreen;
     border-radius: 15px;
     margin-top: 8px;
+    position: relative;
 }
 .theme-circle {
-    width: 18px; height: 18px;
+    width: 19px; height: 19px;
     border-radius: 50%;
     border: 1px solid rebeccapurple;
     background-color: white;
     box-shadow: 0 0 5px rebeccapurple;
     margin: 1px;
     transform: translateX(0);
-    transition: transform 0.4s;
+    transition: all 0.4s;
+    position: absolute;
+    top: 0;
+}
+.themeicon-container {
+    padding: 0;
+    margin: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sun-icon {
+    color: #fff;
+    filter: drop-shadow(0px 0px 6px var(--lcolor));
+}
+.moon-icon {
+    color: #c6fc06;
+    filter: drop-shadow(0px 0px 6px #d9fd0e);
 }
 .theme-circle.light {
     transform: translateX(23px);
-    }
+    background-color: #000000;
+ }
 .h-button {
     margin: 0px;
     border: none;
