@@ -1,0 +1,21 @@
+.b-footer {
+    width: 100vw; height: 88vh;
+    padding: 20px 0;
+    background-color: #333;
+}
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-div ul {
+    padding: 0;
+}
+.footer-div li {
+    color: silver;
+    list-style-type: none;
+    text-align: center;
+    padding: 2px 0px;
+    font-size: 14px;
+}

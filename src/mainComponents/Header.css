@@ -1,13 +1,12 @@
 .header {
     width: 100%; height: 11%;
     margin-bottom: 1px;
-    position: sticky;
-    top: 0px; left: 0px;
     background-color: var(--bg);
     border-bottom: 1.8px solid #333;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1000;
 }
 .h-inner {
     width: 86%;
@@ -16,7 +15,7 @@
     justify-content: space-between;
 }
 .h-logo {
-    color: lawngreen;
+    color: var(--hcolor);
     text-shadow: 0 0 3px var(--lcolor);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -29,7 +28,7 @@
 }
 .h-theme {
     width: 46px; height: 23px;
-    border: 1.5px solid lawngreen;
+    border: 1.5px solid var(--hcolor);
     border-radius: 15px;
     margin-top: 8px;
     position: relative;
@@ -55,7 +54,7 @@
     align-items: center;
 }
 .sun-icon {
-    color: #fff;
+    color: rebeccapurple;
     filter: drop-shadow(0px 0px 6px var(--lcolor));
 }
 .moon-icon {
@@ -69,33 +68,32 @@
 .h-button {
     margin: 0px;
     border: none;
-    background-color: #000000;
+    background-color: inherit;
     font-size: 18px;
     user-select: none;
     cursor: pointer;
-    color: lawngreen;
+    color: var(--hcolor);
 }
 .h-button:hover {
     color: var(--lcolor);
     text-shadow: 0 0 3px var(--lcolor);
 }
-.h-button:focus {
-    border: 1.2px solid lawngreen;
+.navactive {
+    border: 1.2px solid var(--hcolor);
     border-radius: 8px;
-    box-shadow: 0 0 5px lawngreen;
+    box-shadow: 0 0 5px var(--hcolor);
 }
-.h-skills {
+/* .h-button:focus {
+    border: 1.2px solid var(--hcolor);
+    border-radius: 8px;
+    box-shadow: 0 0 5px var(--hcolor);
+} */
+.skills {
     margin-top: 6px;
 }
-.h-about {
-    
-}
-.h-profile {
+.profile {
     margin-top: -8px;
 }
-.h-project {
-
-}
-.h-contact {
+.contact {
     margin-top: 6px;
 }

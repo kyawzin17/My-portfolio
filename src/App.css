@@ -11,3 +11,12 @@
 .app::-webkit-scrollbar {
   display: none;
 }
+.body {
+    width: 100%;
+    background-color: var(--bg);
+    height: 89vh;
+    overflow-y: auto;
+}
+.body::-webkit-scrollbar {
+    display: none;
+}

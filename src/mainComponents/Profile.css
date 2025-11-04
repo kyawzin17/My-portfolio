@@ -25,16 +25,17 @@ h1, h2, h3 {
     padding: 4px;
     color: var(--color);
     border-radius: 10px;
-    border: 1.4px solid lawngreen;
-    box-shadow: 0 0 3px lawngreen;
+    border: 1.4px solid var(--pcolor);
+    box-shadow: 0 0 3px var(--pcolor);
     margin: 5px 8px;
 }
 .icon-a:hover {
-    box-shadow: 0 0 6px lawngreen;
+    box-shadow: 0 0 6px var(--pcolor);
+    padding: 5px;
     color: var(--lcolor);
 }
 .name-span {
-    color: lawngreen;
+    color: var(--pcolor);
     font-size: 30px;
 }
 .profile-right {
@@ -48,4 +49,12 @@ h1, h2, h3 {
 .b-section {
     margin-bottom: 3px;
     padding: 20px;
+}
+.blink {
+    animation: bli 0.5s step-end infinite alternate;
+}
+@keyframes bli {
+    50% {
+        opacity: 0;
+    }
 }

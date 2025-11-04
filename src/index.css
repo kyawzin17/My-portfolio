@@ -7,6 +7,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body, html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -15,7 +18,11 @@ code {
     monospace;
 }
 :root {
-  --bg: #000000;
-  --color: #ffffff;
+  --bg: #000000;/*linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)*/
+  --hcolor: lawngreen;/*#14078dff*/
+  --pcolor: lawngreen;/*rebeccapurple*/
+  --color: #ffffff;/*#0d1b2a*/
   --lcolor: #16bff3ff;
+  
+  --lmcolor: rebeccapurple;
 }

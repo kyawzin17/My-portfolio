@@ -79,7 +79,7 @@
         border-top-left-radius: 8px;
     }
     .tw-bar {
-        width: 2%;
+        width: 30%;
         height: 100%;
         background-color: rgb(112, 7, 250);
         border-bottom-left-radius: 8px;
@@ -104,32 +104,31 @@
         border: 2px solid rebeccapurple;
         border-radius: 5px;
         box-shadow: 0 0 5px var(--lcolor);
-        color: var(--color);
+        color: white;
+        text-shadow: 0 0 4px rgb(7, 173, 250);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         background-color: #212121;
     }
-    .card header {
-        height: 15%;
+    .back-face header {
+        height: 18%;
         width: 100%;
         padding: 5px;
         text-align: center;
         margin: 0;
+        font-size: 20px;
+        font-weight: bold;
     }
-    .card main {
-        height: 68%;
+    .back-face main {
+        height: 80%;
         width: 100%;
         padding: 5px;
         margin: 0;
-    }
-    .card footer {
-        height: 15%;
-        width: 100%;
-        text-align: center;
-        padding: 4px; margin: 0;
-        border: none;
-        border-top: 2px solid #000;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .html {
         grid-area: first;
@@ -140,7 +139,7 @@
     .javascript {
         grid-area: third;
     }
-    .react.js {
+    .react {
         grid-area: fourth;
     }
     .bootstrap {
@@ -149,3 +148,58 @@
     .tailwind {
         grid-area: six;
     }
+
+.flip-inner {
+    position:relative; 
+    width:100%; height: 100%; 
+    transform-style:preserve-3d; 
+    transition: transform 600ms cubic-bezier(.2,.9,.3,1);
+}
+.card:hover .flip-inner, .card:focus-within .flip-inner{ transform: rotateY(180deg) }
+.flip-face{
+    position:absolute; inset:0; backface-visibility:hidden; border-radius:10px; padding:5px; display:flex; flex-direction:column; gap:8px;
+  }
+  .font-face{ display: flex;
+                 align-items: center;
+                 justify-content: center;
+                  background: inherit; 
+                }
+  .back-face{ 
+                background: inherit;
+                transform: rotateY(180deg);
+                overflow:auto 
+            }
+
+  .face-html {
+    background: url('../pictures/png-clipart-html-web-development-world-wide-web-consortium-javascript-webgl-5-angle-web-design-thumbnail.png') repeat;
+    background-size: 13px;
+  }
+  .face-css {
+    background: url("../pictures/download.jpg") repeat;
+    background-size: 13px;
+  }
+  .face-javascript {
+    background: url("../pictures/javascript-logo-web-application-scripting-language-web-development-web-banner-content-management-system-yellow-line-png-clipart.jpg") repeat;
+    background-size: 13px;
+  }
+  .face-react {
+    background: url("../pictures/react-logo-icon-11609374122d9vkbptqap.png") repeat;
+    background-size: 13px;
+  }
+  .face-bootstrap {
+    background: url('../pictures/download\ \(1\).jpg') repeat;
+    background-size: 13px;
+  }
+  .face-tailwind {
+    background: url('../pictures/download.png') repeat;
+    background-size: 13px;
+  }
+  .font-face span {
+    font-size: 23px;
+    font-weight: bold;
+    text-shadow: 0 0 30px #fff;
+    color: #000;
+  }
+  .inner-ci {
+    border-radius: 50%;
+  }
