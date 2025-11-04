@@ -8,7 +8,7 @@ export default function Header({active, setActive}) {
     const [mode, setMode]= useState('');
     
     useEffect(() => {
-
+        
         const storeTheme= localStorage.getItem("mode");
         if(storeTheme === "light") {
             document.documentElement.style.setProperty("--bg", "#F8F9FA");//#a6c1ee
@@ -23,7 +23,7 @@ export default function Header({active, setActive}) {
             document.documentElement.style.setProperty("--pcolor", "lawngreen");
             setMode(storeTheme);
         }
-
+        
     }, []);
 
     const scrollHandler= (id) => {
