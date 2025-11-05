@@ -99,8 +99,10 @@
     gap: 20px;
     grid-template-areas: 'first second third'
                             'fourth five six';
+    border: 1px solid red;
 }
     .card {
+        min-width: 170px;
         border: 2px solid rebeccapurple;
         border-radius: 5px;
         box-shadow: 0 0 5px var(--lcolor);
@@ -203,3 +205,14 @@
   .inner-ci {
     border-radius: 50%;
   }
+
+@media (max-width: 1200px) {
+    .skills-bar {
+        padding: 5px 0px;
+        width: 35%;
+    }
+    .skills-card {
+        padding: 0px;
+        width: 63%;
+    }
+}

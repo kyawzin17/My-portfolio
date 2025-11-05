@@ -1,12 +1,44 @@
 import "./Header.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faSun, faMoon} from "@fortawesome/free-solid-svg-icons";
 
 export default function Header({active, setActive}) {
 
     const [mode, setMode]= useState('');
-    
+    const [layout, setLayout]= useState(window.innerWidth);
+    const [width, setWidth]= useState(0);
+    const [left, setLeft]= useState(0);
+    const btnRef= useRef({});
+
+    const section= [
+      { id: "skills", component: "Skills"},
+      { id: "about", component: "About"},
+      { id: "profile", component: "Profile"},
+      { id: "project", component: "Project"},
+      { id: "contact", component: "Contact"},
+    ];
+    const sectionPhone= [
+      { id: "profile", component: "Profile"},
+      { id: "about", component: "About"},
+      { id: "project", component: "Project"},
+      { id: "skills", component: "Skills"},
+      { id: "contact", component: "Contact"},
+    ];
+
+    const resizeFun= () => {
+        setLayout(window.innerWidth);
+    }
+    useEffect(() => {
+
+        section.map((e) => {
+            const tag= btnRef.current[e.id];
+            if(tag.innerText.toLowerCase() === active) {
+                setWidth(tag.offsetWidth - 13);
+                setLeft(tag.offsetLeft + 2);
+            }
+    })
+    },[active]);
     useEffect(() => {
         
         const storeTheme= localStorage.getItem("mode");
@@ -26,10 +58,17 @@ export default function Header({active, setActive}) {
         
     }, []);
 
-    const scrollHandler= (id) => {
+    const scrollHandler= (e, id) => {
         const element= document.getElementById(id);
+        const w= e.target.offsetWidth - 13;
+        const l= e.target.offsetLeft + 2;
+        setWidth(w);
+        setLeft(l);
         setActive(id);
-         if (element) element.scrollIntoView({behavior: "smooth"});
+         if (element) {
+            element.scrollIntoView({behavior: "smooth"});
+            
+         };
         // if(element) {
         //     const y= element.getBoundingClientRect().top + window.scrollY - offHeight;
         //     window.scrollTo({ top: y, behavior: "smooth",});
@@ -37,6 +76,8 @@ export default function Header({active, setActive}) {
     }
 
     function themeChange() {
+        window.addEventListener("resize", resizeFun);
+        
         if(mode === "light") {
             setMode("dark");
             localStorage.setItem("mode","dark");
@@ -54,36 +95,33 @@ export default function Header({active, setActive}) {
             document.documentElement.style.setProperty("--pcolor", "rebeccapurple");//rebeccapurple
         }
     }
-    const section= [
-      { id: "skills", component: "Skills"},
-      { id: "about", component: "About"},
-      { id: "profile", component: "Profile"},
-      { id: "project", component: "Project"},
-      { id: "contact", component: "Contact"},
-    ];
+    
     return (
-        <header className="header">
-            <div className="h-inner">
-                <div className="h-logo">
-                    <span>Portfolio!</span>
+        <header className="header tr">
+            <div className="h-inner tr">
+                <div className="h-logo tr">
+                    <span>Portfolio! {layout}</span>
                 </div>
-                <div className="h-center">
-                    {section.map((sec) => {
-                        return <button onClick={() => scrollHandler(sec.id)} className={`h-button ${active === sec.id && "navactive"} ${sec.id}`}>{sec.component}</button>
-                    })}
-                    {/* <button className="h-skills h-button">Skills</button>
-                    <button className="h-about h-button">About</button>
-                    <button className="h-profile h-button">Profile</button>
-                    <button className="h-project h-button">Projects</button>
-                    <button className="h-contact h-button">Contact</button> */}
+                <div className="h-center tr">
+                    {layout <= 575 ?
+                    sectionPhone.map((sec) => {
+                        return <button ref={(el) => btnRef.current[sec.id] = el} onClick={(e) => scrollHandler(e, sec.id)} className={`h-button tr ${active === sec.id && "navactive"} ${sec.id}`}>{sec.component}</button>
+                    })
+                    :
+                    section.map((sec) => {
+                        return <button ref={(el) => btnRef.current[sec.id] = el} onClick={(e) => scrollHandler(e, sec.id)} className={`h-button tr ${active === sec.id && "navactive"} ${sec.id}`}>{sec.component}</button>
+                    })
+                }
+                    
                 </div>
-                <div onClick={themeChange} className="h-theme">
-                    <div className="themeicon-container">
-                        <FontAwesomeIcon className="sun-icon" icon={faSun} />
-                        <FontAwesomeIcon className="moon-icon" icon={faMoon} />
+                <div style={{width: `${width}px`, marginLeft: `${left}px`}} className="section-bar tr"></div>
+                <div onClick={themeChange} className="h-theme tr">
+                    <div className="themeicon-container tr">
+                        <FontAwesomeIcon className="sun-icon tr" icon={faSun} />
+                        <FontAwesomeIcon className="moon-icon tr" icon={faMoon} />
                     </div>
                     
-                    <div className={mode === "light" ? "theme-circle light" : "theme-circle"}>
+                    <div className={mode === "light" ? "theme-circle light tr" : "theme-circle tr"}>
 
                     </div>
                 </div>

@@ -22,29 +22,29 @@ export default function Profile() {
     }, [])
 
     return (
-        <section className="b-profile b-section">
-                <div className="profile-left">
+        <section className="b-profile b-section tr">
+                <div className="profile-left tr">
                     <h1>Hello,</h1>
                     <h2> I'm <span className="name-span">Kyaw Zin</span></h2>
-                    <h3>{textDisplay} <span className="blink">#</span></h3>
+                    <h3>{textDisplay} <span className="blink tr">#</span></h3>
                     {/* <h3>I can write Html, Css, JavaScript & React.js </h3> */}
-                    <div className="icon-container">
-                        <a href="https://github.com/kyawzin17" target="_blank" rel="noopener noreferrer" className="icon-a">
+                    <div className="icon-container tr">
+                        <a href="https://github.com/kyawzin17" target="_blank" rel="noopener noreferrer" className="icon-a tr">
                             <FontAwesomeIcon icon={faGithub} size="lg" />
                         </a>
-                        <a href="https://facebook.com/reddragon1766" target="_blank" rel="noopener noreferrer" className="icon-a">
+                        <a href="https://facebook.com/reddragon1766" target="_blank" rel="noopener noreferrer" className="icon-a tr">
                             <FontAwesomeIcon icon={faFacebook} size="lg" />
                         </a>
-                        <a href="https://t.me/@kyawzinwinei" target="_blank" rel="noopener noreferrer" className="icon-a">
+                        <a href="https://t.me/@kyawzinwinei" target="_blank" rel="noopener noreferrer" className="icon-a tr">
                             <FontAwesomeIcon icon={faTelegram} size="lg" />
                         </a>
-                        <a href="viber://chat?number=%2B959674114295" target="_blank" rel="noopener noreferrer" className="icon-a">
+                        <a href="viber://chat?number=%2B959674114295" target="_blank" rel="noopener noreferrer" className="icon-a tr">
                             <FontAwesomeIcon icon={faViber} size="lg" />
                         </a>
                     </div>
                 </div>
-                <div className="profile-right">
-                    <img className="my-photo" src={myPhoto} alt="my-photo" />
+                <div className="profile-right tr">
+                    <img className="my-photo tr" src={myPhoto} alt="my-photo" />
                 </div>
             </section>
     )

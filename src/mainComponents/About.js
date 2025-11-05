@@ -4,9 +4,9 @@ import aboutPhoto from "../pictures/myPortfolioPicture.png";
 export default function About() {
 
     return (
-        <section className="b-about b-section">
-            <div className="photo-container">
-                <svg className="svg-photo" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg" width='100%' height='auto'>
+        <section className="b-about b-section tr">
+            <div className="photo-container tr">
+                <svg className="svg-photo tr" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg" width='100%' height='auto'>
                     <defs>
                         <filter id='shadow' x='-50%' y="-50%" width='200%' height='200%'>
                             <feDropShadow dx='0' dy='0' stdDeviation='5' floodColor="rgb(102,51,153)"/>
@@ -20,7 +20,7 @@ export default function About() {
                 </svg>
                 {/* <img className="about-photo" src={aboutPhoto} alt="For about photo!" /> */}
             </div>
-            <div className="text-container">
+            <div className="text-container tr">
                 <h3> Who I'm?</h3>
                 <p>
                     Hello, my name is Kyaw Zin Win, and I'm a fontend developer. I specialize in building modern, responsive websites using HTML, CSS, JavaScript, Bootstrap, and React.

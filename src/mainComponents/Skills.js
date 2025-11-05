@@ -146,12 +146,6 @@ export default function Skills() {
                             </div>
                         )
                     })}
-                    {/* <div className="card html-card"></div>
-                    <div className="card css-card"></div>
-                    <div className="card js-card"></div>
-                    <div className="card react-card"></div>
-                    <div className="card bs-card"></div>
-                    <div className="card tl-card"></div> */}
                 </div>
             </div>
         </section>
