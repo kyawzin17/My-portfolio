@@ -21,57 +21,58 @@ export default function Skills() {
     const [parsenage, setParsenage]= useState(0);
     
     return (
-        <section className="b-skills b-section">
+        <section className="b-skills b-section tr">
             <div className="skills-head">
                 <h2>Skills</h2>
                 <p>✦•┈๑⋅⋯ ⋯⋅๑┈•✦</p>
             </div>
-            <div className="skills-main">
-                <div className="skills-bar">
+            <div className="skills-main tr">
+                <div className="skills-bar tr">
                     <h2>My skills progress bar!</h2>
                     <ul>
 
                         <li>
                             <h4>Html</h4>
-                            <div className="bar">
+                            <div className="bar tr">
                                 <div className="html-bar"></div>
                             </div>
                         </li>
                         <li>
                             <h4>Css</h4>
-                            <div className="bar">
+                            <div className="bar tr">
                                 <div className="css-bar"></div>
                             </div>
                         </li>
                         <li>
                             <h4>JavaScript</h4>
-                            <div className="bar">
+                            <div className="bar tr">
                                 <div className="js-bar"></div>
                             </div>
                         </li>
                         <li>
                             <h4>React.js</h4>
-                            <div className="bar">
+                            <div className="bar tr">
                                 <div className="react-bar"></div>
                             </div>
                         </li>
                         <li>
                             <h4>Bootstrap css</h4>
-                            <div className="bar">
+                            <div className="bar tr">
                                 <div className="bs-bar"></div>
                             </div>
                         </li>
                         <li>
                             <h4>Tailwind css</h4>
-                            <div className="bar">
+                            <div className="bar tr">
                                 <div className="tw-bar"></div>
                             </div>
                         </li>
 
                     </ul>
                 </div>
-                <div className="skills-hr"></div>
-                <div className="skills-card">
+                <div className="skills-hr tr"><div className="hr-ani"></div></div>
+                <h2 className="about-cardTit tr">My skills card!</h2>
+                <div className="skills-card tr">
                     {cardArray.map((card) => {
 
                         const radius=65; 
@@ -82,8 +83,7 @@ export default function Skills() {
 
                         return (
                             <div key={card.id} 
-                                    className={`card ${card.title.toLowerCase()}`}>
-
+                                    className={`card tr ${card.title.toLowerCase()}`}>
                                 <div onMouseOver={() => {
                                     setActiveid(card.id);
         let start= 0;

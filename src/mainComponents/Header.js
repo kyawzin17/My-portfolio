@@ -29,6 +29,7 @@ export default function Header({active, setActive}) {
     const resizeFun= () => {
         setLayout(window.innerWidth);
     }
+    window.addEventListener("resize", resizeFun);
     useEffect(() => {
 
         section.map((e) => {
@@ -76,7 +77,6 @@ export default function Header({active, setActive}) {
     }
 
     function themeChange() {
-        window.addEventListener("resize", resizeFun);
         
         if(mode === "light") {
             setMode("dark");

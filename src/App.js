@@ -29,7 +29,9 @@ function App() {
           }
         });
       }, 
-      { threshold: 0.6}
+      { threshold: 0.6,
+        // rootMargin: "-80px 0px 0px 0px",
+      }
     );
     array.forEach(({id}) => {
     if(sectionRef.current[id]) observer.observe(sectionRef.current[id]);

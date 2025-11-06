@@ -1,6 +1,6 @@
 import "./Project.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleChevronDown, faCircleChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faDiagramProject, faUtensils, faTree } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 // import {Resturent} from "../../public/Ep-1/bootstrap1.html"
 
@@ -8,7 +8,10 @@ export default function Project() {
 
 const [item1, setItem1]= useState(false);
 const [item2, setItem2]= useState(false);
-const [phead, setPhead]= useState(true)
+const [phead, setPhead]= useState(true);
+const [layout, setLayout]= useState(window.innerWidth);
+
+window.addEventListener("resize", () => setLayout(window.innerWidth));
 
 function item1Click() {
     setItem1(true);
@@ -21,50 +24,27 @@ function item2Click() {
     setPhead(false);
 }
     return (
-        <section className="b-project b-section">
-            <div className="sidebar-project">
-                <h2>Projects</h2>
-                <hr />
-                <ul className="project-ul">
+        <section className="b-project b-section tr">
+            <div className="sidebar-project tr">
+                <h2>{layout > 768 ? "Project" : <FontAwesomeIcon icon={faDiagramProject} size="lg" />}</h2>
+                <ul className="project-ul tr">
                     <li onClick={item1Click} className={item1 ? "active" : "noActive"}>
-                        <h3>Restruent project</h3>
+                        <h3>{layout > 768 ? "Restaurant web" : <FontAwesomeIcon icon={faUtensils} size="lg" />}</h3>
                     </li>
                     <li onClick={item2Click} className={item2 ? "active" : "noActive"}>
-                        <h3>Add project...</h3>
+                        <h3>{layout > 768 ? "Nature of tree" : <FontAwesomeIcon icon={faTree} size="lg" />}</h3>
                     </li>
                 </ul>
-                {/* <div onClick={() => dropdown(down1, setDown1)} className="project-item">
-                    <h3>Restruent project</h3>
-                    {down1 ? <FontAwesomeIcon className="dropdown-icon" icon={faCircleChevronUp} /> : <FontAwesomeIcon className="dropdown-icon" icon={faCircleChevronDown} />}
-                </div>
-                {down1
-                 &&
-                <ul className="dropdown-ul">
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>JavaScript</li>
-                </ul>}
-                <div onClick={() => dropdown(down2, setDown2)} className="project-item">
-                    <h3>React.js project</h3>
-                    {down2 ? <FontAwesomeIcon className="dropdown-icon" icon={faCircleChevronUp} /> : <FontAwesomeIcon className="dropdown-icon" icon={faCircleChevronDown} />}
-                </div>
-                {down2
-                 &&
-                <ul className="dropdown-ul">
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>JavaScript</li>
-                </ul>} */}
             </div>
-            <div className="view-project">
+            <div className="view-project tr">
                 {phead && 
-                    <div className="view-main">
+                    <div className="view-main tr">
                         <h1>This is My project!</h1>
                         <h2>Please, Click sidebar to view my project pages.</h2>
                     </div>
                 }
                 {item1 && 
-                    <div className="view-item1">
+                    <div className="view-item1 tr">
                     <h2>Preview, My restaurant project!</h2>
                     <iframe 
                         src="/Ep-1/bootstrap1.html"
