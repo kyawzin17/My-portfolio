@@ -100,7 +100,7 @@ export default function Header({active, setActive}) {
         <header className="header tr">
             <div className="h-inner tr">
                 <div className="h-logo tr">
-                    <span>Portfolio! {layout}</span>
+                    <span>Portfolio!</span>
                 </div>
                 <div className="h-center tr">
                     {layout <= 575 ?
